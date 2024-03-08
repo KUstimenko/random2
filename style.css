@@ -1,0 +1,63 @@
+body {
+  background: #10020a;
+  font-family: sans-serif;
+}
+
+.btn {
+  background-size: 50%, 100%;
+}
+
+.btn::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10em;
+  -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: -webkit-box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out;
+  transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+}
+
+.btn {
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #4c992d,
+    #7cfc00
+  ); /* Green gradient */
+  background-size: 200%; /* Animate gradient movement */
+  animation: gradientMove 4s ease-in-out infinite; /* Add animation */
+  border-radius: 10em;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-size 0.4s ease-in-out; /* Smooth transition */
+}
+
+a {
+  color: white;
+}
+
+.btn:hover::after {
+  -webkit-box-shadow: 0 0 24px #4c992d;
+
+  box-shadow: 0 0 24px #7cfc00;
+}
+
+p {
+  /* height: 200px; */
+  color: white;
+}
+.box {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 44px;
+}
