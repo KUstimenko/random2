@@ -23,6 +23,7 @@ body {
 
 .btn {
   position: relative;
+  text-align: center;
   background-image: linear-gradient(
     to right,
     #4c992d,
@@ -32,7 +33,7 @@ body {
   animation: gradientMove 4s ease-in-out infinite; /* Add animation */
   border-radius: 10em;
   text-decoration: none;
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
   font-weight: 500;
   display: inline-block;
   transition: background-size 0.4s ease-in-out; /* Smooth transition */
@@ -51,6 +52,7 @@ a {
 p {
   /* height: 200px; */
   color: white;
+  text-align: center;
 }
 .box {
   display: flex;
